@@ -70,14 +70,32 @@ for name in names:
 
 # Range function
 # Ranges generate a list of numbers
-numbers = range(5)
+numbers = range(5, 7, 2)
+
+list_of_numbers = list(numbers)
+print(list_of_numbers) # prints [5, 7]
 
 for number in numbers:
-    print(number) # prints 0, 1, 2, 3, 4
+    print(number) # prints 5
 
 # Tuples (immutable lists)
 numbers = (1, 2, 3)
 #number[0] = 10 # This will throw an error
+
+# Enumerate method (returns tuple)
+for index, name in enumerate(names):
+    print(index, name) # prints 0 Anthony
+
+# Zipping lists
+list1 = [1, 2, 3]
+list2 = [10, 20, 30]
+
+print(list(zip(list1, list2))) # prints [(1, 10), (2, 20), (3, 30)]
+
+string = "Hello World"
+
+print(string.upper()) # prints "HELLO WORLD"
+print(string) # prints "Hello World"
 
 
 
